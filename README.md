@@ -41,7 +41,7 @@
 ### 2.1 替换相关文件
 * **替换model_infer.cpp预测代码**：使用示例中`dlldemo`文件夹中的`model_infer.cpp`和`CMakeLists.txt`文件，替换`PaddleX/deploy/cpp/demo/`目录下的同名文件
 
-* **替换相关头文件**：使用示例中`dllcomon`文件夹中的`logger.h`、`model_infer.h`、`thread_pool.h`、`timer.h`四个头文件放置于`PaddleX/deploy/cpp/model_deploy/common/include/`目录下
+* **替换相关头文件**：使用示例中`dlldemo`文件夹中的`logger.h`、`model_infer.h`、`thread_pool.h`、`timer.h`四个头文件放置于`PaddleX/deploy/cpp/model_deploy/common/include/`目录下
 ### 2.2 使用Cmake进行编译
 * 使用Cmake进行编译，我们主要对`PaddleX/deploy/cpp`中代码进行编译，并创建`out`文件夹用来承接编译生成的内容
 <div align="center">
@@ -121,15 +121,15 @@
 
 * 正常加载模型预测
 <div align="center">
-<img src="./images/12.png"  width = "800" />             </div>
+<img src="./images/13.png"  width = "800" />             </div>
 
 * 多线程预测
 <div align="center">
-<img src="./images/13.png"  width = "800" />             </div>
+<img src="./images/14.png"  width = "800" />             </div>
 
 * 开启TensorRT预测
 <div align="center">
-<img src="./images/14.png"  width = "800" />             </div>
+<img src="./images/12.png"  width = "800" />             </div>
 
 ### 3.6 C#项目模型推理/数据流向简要说明
 
