@@ -513,7 +513,7 @@ void ModelWrapper::InitModelEnter(const char* model_type, const char* model_dir,
 
 	std::string model_filename = std::string(model_dir) + "\\model.pdmodel";
 	std::string params_filename = std::string(model_dir) + "\\model.pdiparams";
-	std::string cfg_file = std::string(model_dir) + std::string(1,file_sepator());
+	std::string cfg_file = std::string(model_dir) + "\\";
 	if (strcmp(model_type, "seg") == 0)
 		cfg_file += "deploy.yaml";
 	else if (strcmp(model_type, "det") == 0 || strcmp(model_type, "mask") == 0)
