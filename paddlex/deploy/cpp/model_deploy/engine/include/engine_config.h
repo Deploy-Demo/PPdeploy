@@ -138,6 +138,11 @@ struct TritonEngineConfig {
 
   // Request the address
   std::string url_;
+
+  int target_width = 0;
+  int target_height = 0;
+  std::string shape_range_info_path = "";
+  std::string model_type = "";
 };
 
 struct TensorRTEngineConfig {
